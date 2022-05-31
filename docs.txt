@@ -1,13 +1,109 @@
 DOCUMENTATION : 
+
+
+Bash scripting : 
 - create a file called provision.sh
-- change permissions of this file chmod +x provision.sh
-
-- we need to let the linux know that this file needs to run as a script ;
-- first line 'MUST BE' starting with '#!/bin/bash'
-
-- update & updgrade
+- change permission of this file 'chmod +x provision ( name of the file) 
+- first line MUST BE starting with  :#!/bin/bash  
+- when linux interpreter starts to read the file and it sees this commnds
+it knows that it is a shell script.
+( the extenstion .sh & the permission ) 
+- update and upgrade
 - installed nginx
 - start nginx
-- 'enable nginx' -- to make sure it alwasy runs
-- stopped then started 
-- vagrant ssh 
+-'enable nginx'
+- checked status
+- stoped then started
+- we create this file in the VM 
+- vagrant status
+- vagrant ssh
+- vagrant destroy
+- vagrant up
+- vagrant ssh
+- sudo apt-get update -y
+
+CREATING A FILE IN THE VIRTUAL MACHINE: 
+
+sudo nano provision.sh
+
+Inside of the file :
+#!/bin/bash
+#update
+sudo apt-get update -y
+#upgrade
+sudo apt-get upgrade -y
+#install nginx
+sudo apt-get install nginx -y
+# start nginx
+sudo systemctl start nginx
+#enable nginx
+sudo systemctl enable nginx
+
+
+Save it : ctrl + X /y -enter
+
+Checking the file : cat provision.sh
+
+------------
+PERMISSIONS:check permissions command  : ll
+
+provision.sh is not executable file
+
+MAKE THE FILE EXECUTABLE : 
+
+sudo chmod +x provision.sh
+
+CHECK PERMISSION AGAIN : ll
+
+
+HOW TO RUN THIS FILE ?( THE FILE EXISTS IN THE CURRENT LOCATION ) :
+
+To run our script : sudo ./provision.sh
+( OTHERIWSE CHECK THE LOCATION AND PROVIDE IT ) 
+
+-----
+
+sudo systemctl status nginx -- to check the status --;
+
+WE HAVE JUST CREATED A FILE which automates the tasks of installing
+the nginx server.
+
+----------
+
+We have a NODE.JS  app which we have to deploy : 
+So we have to check for status to see if its' ready to be deployed.
+
+
+Inside the app /environment/spec-tests we need to run the command:
+
+gem install bundler
+
+budler 
+
+THESE 2 THINGS WE ONLY NEED TO DO ONCE !!!
+
+NEXT we need to run the test : 
+rake spec 
+
+this will show us what dependecies need to be installed.
+
+Inside of the Vagrantfile we create a command which will copy eveything from the 
+localhost to home/vagrant/app location : 
+
+config.vm.synced_folder ".","/home/vagrant/app"(the new folder) 
+
+default location : pwd --? /home/vagrant
+
+vagrant reload 
+ls 
+app
+cd app ( will be everything from the local host) 
+cd app/app/app/app ( here is app.js) 
+
+from inside of the app do : npm install
+npm start 
+
+you app is ready and listening to port 3000
+
+
+
