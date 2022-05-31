@@ -108,7 +108,7 @@ Why devops/benefits ?
 Role of the devops :
 DevOps is not limited to a single role. Everyone who takes part in each of the application lifecycle phases must embrace the DevOps culture. However, in some organisations there are a few people or teams whose sole focus is enabling automation, defining practises, and implementing CI/CD pipelines. Sometimes, the official title of these roles is DevOps engineer or DevOps specialist.
 
-What is development Environments?Why is it needed?
+<img src = "devops2.png">
 
 
 
