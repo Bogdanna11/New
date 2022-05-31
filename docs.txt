@@ -1,0 +1,13 @@
+DOCUMENTATION : 
+- create a file called provision.sh
+- change permissions of this file chmod +x provision.sh
+
+- we need to let the linux know that this file needs to run as a script ;
+- first line 'MUST BE' starting with '#!/bin/bash'
+
+- update & updgrade
+- installed nginx
+- start nginx
+- 'enable nginx' -- to make sure it alwasy runs
+- stopped then started 
+- vagrant ssh 
