@@ -211,6 +211,12 @@ or  vi.test.txt
 
 
 What is Devops?
+ A compound of development (Dev) and operations (Ops), DevOps is the union of people, process, and technology to continually provide value to customers.
+What does DevOps mean for teams? DevOps enables formerly siloed roles—development, IT operations, quality engineering, and security—to co-ordinate and collaborate to produce better, more reliable products. By adopting a DevOps culture along with DevOps practises and tools, teams gain the ability to better respond to customer needs, increase confidence in the applications they build, and achieve business goals faster.                                                           
+
+ DevOps evolution :                                          
+                                                             
+                                                             
 Why devops/benefits ?
 <img src = "Benefits-DevOps-1024x500.png">
 
@@ -223,4 +229,14 @@ DevOps is not limited to a single role. Everyone who takes part in each of the a
 
 
 
-What are the 4 pillars of Devops ?-- diagram presentation !
+What are the 4 pillars of Devops ?
+                        
+   The 4 pillars are :
+ 1) Professionalism 
+ 2) Communication
+ 3) Engagement
+ 4) Delivery                        
+                        
+                        
+                        
+                        
