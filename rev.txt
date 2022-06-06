@@ -1,0 +1,41 @@
+
+How to set up nginx  as reverse proxy for my Node js application:
+
+I have already an app running at the address : 192.168.10.100
+ the default Nginx placeholder page
+
+I have installed Node.js
+
+I have the application running at port 3000.
+
+Now I  need to set up a way for the users to access it.
+I will set up the NGINX web server as a reverse proxy for this purpose.
+
+We will set up the Nginx configuration here : 
+
+/etc/nginx/sites-available/default
+
+sudo nano /etc/nginx/sites-available/default
+
+In the server block there is a location /block.
+
+I replace the contents of this block with the following config:
+. . .
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+
+
+This configures the server to respond to requests at its root.
+My server is available at  192.168.10.100:3000 will send the request to app.js
+listening to port 3000 at localhost.
+
+sudo nginx -t
+sudo systemctl restart nginx
