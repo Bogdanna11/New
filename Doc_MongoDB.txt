@@ -1,0 +1,96 @@
+how to find out how processes are running --;
+
+top
+
+get your terminal back : control C
+
+ps aux -- shows all the processes which are running ; 
+
+how to kill the processs 'sudo kill process -id'
+
+how to use piping | to sort out or short list process 
+--to research for this -- ;
+
+how to use head  and tail ( if you want to check from the top /bottom)
+
+we used ll /nano / cd 
+
+----
+
+Let's go back to the architecture :
+
+README :
+1) Create another VM for our DB: mongodb.
+2) Ubuntu 16.04  we will use the same box as app
+3) Configure /install mondoDB with correct version;
+4) Allow the required access :who is going to access the request 
+to access the database:
+
+allow IP of our app machine to connect to our DB.
+-we are goinng to do that in our app machine by creating an environment
+called DB_HOST.
+
+-cd/etc/ is available here
+-sudo nano mangod.conf -- by default it allows access to 127.0.0.1 
+with port 27017.
+
+-- in the config file we neeed to edit mongo.conf to allow app ip 
+or for the ease of use allow all: not best for production env.
+
+
+
+--0.0.0.0 will be allowed in the config file ----
+
+PLAN- DESIGN -DEVELOP ---
+
+once you change anything in the configuration restart Mongo DB
+- restart and enable 
+
+
+COMMON ERRORS :
+
+- DB_HOST not found,created in db
+-it needs to be created in the app -- we are sending the request from the 
+app to the DB
+-could not allow users to connect to DB;
+
+the IP address is hidden --hidden from the users.
+and the ssh - which is hidden from the users.
+
+======================================================
+
+How to communicate with DB with the vagrant file:
+
+==========================================
+the VM is default at the moment :we naming now the VM
+give the name of the machine ;
+vagrant ssh
+
+
+
+=======================================================
+
+block of code  to use : vragant documentation 
+
+
+lets create 2 VMS 
+
+=======================
+
+sudo apt-get install mongodb-org=3.2.20 -y
+
+
+vabragr destry db 
+vagrant ssh 
+
+
+vrabrgtn ssh 
+
+
+
+
+
+bindIp: 0.0.0.0
+
+
+
