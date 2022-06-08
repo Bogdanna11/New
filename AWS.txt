@@ -28,6 +28,12 @@ Benefits of using Cloud Computing:
 
 
 
+<img src="AWS.jpg" height = "60" width="60" >
+
+
+
+
+
 
 The video about the Google servers in America:
 1) Is just a node
