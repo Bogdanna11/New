@@ -1,0 +1,133 @@
+Cloud computing with AWS :
+
+How does dev_ops fit into the cloud computing ?
+
+What is 2 tier arhitecture ?And what do we need to do 
+to implement that in terms of arhitecture ?
+
+
+What is the comparison with the monolith arhitecure ?
+
+Which are the main key points when we refer to the Cloud Computing?
+1) What is cloud computing
+2) what are the benefits
+3) why should we use it ?
+
+The main characteristics of Dev_Ops are : 
+1) robust
+2) speed
+3) flexibility
+4) it has a large volume of services 
+Benefits of using Cloud Computing:
+1) a lot of power 
+2) a lot of cooling
+3) data ceters all over the world
+4) it helps us release the software fast
+5) AWS is the market leader - it started in 2006 is the most established provider;
+6) offers a large volume of services
+
+
+
+
+The video about the Google servers in America:
+1) Is just a node
+2) High level of security -- second to none
+3) Several layers of security
+4) Security offered via laser beems  underfloor security
+5) Drives fails once in a while and get changed
+6) Ultra secured cage with cooling with water
+7) Their motto is  : challenging the way we do things - innovation 
+8) It's seccure 
+
+on the wesite 
+
+When choosing to deploy to cloud we need to think about: 
+1) Op Ex -- operational expenditure ;
+         -  cost of operations=#
+         -  firewall
+         -  security guy
+
+
+What is refactoring into 2 tier arhitecture?
+
+
+1) Put it into 2 different servers
+2) It is beneficial for small apps
+3) Not useful when scaling.
+4) We use it when we have to have a data layer separate from the front end
+
+AWS --IS A CLOUD PROVIDER:
+
+How do they mange their services ?
+
+We need to deploy the app in  to the right location to make sure it is faster.
+
+why do we need more than 1 avvailability zone ?
+
+
+in case one has a fault ...
+
+It shoudn't have a single point of failure.
+
+
+the traffic/user will be redirected into the 
+availability zone which is available.
+
+you deploy your app in multiregions- in AWS and AZURE 
+
+for example ; 
+
+HIGH BENEFITS :
+
+high availability
+high scalability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
